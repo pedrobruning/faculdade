@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pedro Fera</title>
+</head>
+
+<body align="center">
+    <div id="start">
+        <button id="botao_da_magica">Me clique</button>
+    </div>
+    <div id="content" style="display: none;">
+        <h1>Esse é o Pedro</h1>
+        <h2>Sobre mim</h2>
+        <p>Meu nome é Pedro, tenho 19 anos e gosto muito de programar</p>
+        <p>Comecei a programar em 2017 através de um curso técnico.</p>
+        <p>Gosto de jogar jogos dahoras.</p>
+        <h2>Como fazer miojo:</h2>
+        <ol>
+            <li>
+                Esquente uma panela com água até ferver.
+            </li>
+            <li>
+                Abra o pacote de miojo e coloque o miojo na água fervente.
+            </li>
+            <li>
+                Após 5 minutos adicione o tempero.
+            </li>
+            <li>
+                Aproveite seu miojo delicioso.
+            </li>
+        </ol>
+        <a href="contato.php" target="_blank"><button>Contatos</button></a>
+        <a href="servicos.php?servico=site" target="_blank"><button>Sites</button></a>
+        <a href="servicos.php?servico=portfolio" target="_blank"><button>Portfolio</button></a>
+        <div id="pista_de_danca">
+            <img src="bixo_dancante.gif" />
+            <img src="clube_da_danceteria.gif" style="padding-left: 10px;" />
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var audio = new Audio('musica.mp3');
+    $("#botao_da_magica").click(function () {
+        audio.play();
+        $("#start").hide();
+        $("#content").show();
+    });
+</script>
+
+</html>
